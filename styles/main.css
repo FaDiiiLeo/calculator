@@ -3,9 +3,239 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 32px;
+}
+
+.theme-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.theme-heading {
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.theme-heading h4 {
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.theme-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 38%;
+}
+
+.theme-slider-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
+}
+
+/* input slider for theme selection */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 24px;
+  padding: 0px 6px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 5px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 22px;
+  cursor: pointer;
+  background: #3071A9;
+  border-radius: 10px;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 22px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #3071A9;
+  border-radius: 20px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #3071A9;
+  border-radius: 20px;
+}
+
+input[type=range]::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.display {
+  width: 100%;
+  padding: 38px 30px 32px 30px;
+  direction: rtl;
+  border-radius: 8px;
+  font-size: 52px;
+  margin-bottom: 25px;
+}
+
+.keypad {
+  width: 100%;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 28px;
+  border-radius: 8px;
+}
+
+.btn {
+  font-size: 38px;
+  border-radius: 8px;
+  width: 95px;
+  height: 55px;
+  padding-top: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-long {
+  width: 48%;
+}
+
+.del-btn, .reset-btn {
+  font-size: 28px;
 }
 
 .attribution {
+  margin-top: 24px;
   font-size: 11px;
   text-align: center;
 }

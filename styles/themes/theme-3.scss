@@ -1,0 +1,46 @@
+body{
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+input[type=range]{
+    background-color: hsl(268, 75%, 9%);
+}
+input[type=range]::-webkit-slider-runnable-track {
+    background: hsl(268, 71%, 12%);
+}
+input[type=range]::-webkit-slider-thumb {
+    background: hsl(176, 100%, 44%);
+}
+.display{
+    background-color: hsl(268, 71%, 12%);
+}
+.keypad{
+    background-color: hsl(268, 71%, 12%);
+}
+.btn{
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 5px hsl(290, 70%, 36%);
+    &:active{
+        transform: translateY(3px);
+        box-shadow: 0px 3px hsl(290, 70%, 36%);
+    }
+}
+.reset-btn, .del-btn{
+    color: hsl(0, 0, 100%);
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 5px hsl(285, 91%, 52%);
+    &:active{
+        transform: translateY(3px);
+        box-shadow: 0px 3px hsl(285, 91%, 52%);
+    }
+}
+.result-btn{
+    color: hsl(198, 20%, 13%);
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 5px hsl(177, 92%, 70%);
+    &:active{
+        transform: translateY(3px);
+        box-shadow: 0px 3px hsl(177, 92%, 70%);
+    }
+}
