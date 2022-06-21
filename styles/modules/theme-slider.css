@@ -1,0 +1,65 @@
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 24px;
+  padding: 0px 6px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 5px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 22px;
+  cursor: pointer;
+  background: #3071A9;
+  border-radius: 10px;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 22px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #3071A9;
+  border-radius: 20px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #3071A9;
+  border-radius: 20px;
+}
+
+input[type=range]::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  cursor: pointer;
+}/*# sourceMappingURL=theme-slider.css.map */
