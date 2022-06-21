@@ -1,0 +1,130 @@
+.theme-1{
+  background-color: hsl(222, 26%, 31%);
+  color: rgba(231, 231, 231, 0.925);
+  input[type=range]{
+      background-color: hsl(222, 26%, 31%);
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+      background: hsl(223, 31%, 20%);
+  }
+  input[type=range]::-webkit-slider-thumb {
+      background: hsl(6, 63%, 50%);
+  }
+  .display{
+      background-color: hsl(224, 36%, 15%);;
+  }
+  .keypad{
+      background-color: hsl(223, 31%, 20%);
+  }
+  .btn{
+      color: hsl(226, 30%, 36%);
+      box-shadow: 0px 5px hsl(33, 9%, 77%);
+      &:active{
+          box-shadow: 0px 3px hsl(30, 4%, 59%);
+      }
+  }
+  .del-btn, .reset-btn{
+      color: white;
+      background-color: hsl(225, 21%, 49%);
+      box-shadow: 0px 5px hsl(224, 28%, 35%);
+      &:active{
+          box-shadow: 0px 3px hsl(224, 28%, 35%);
+      }
+  }
+  .result-btn{
+      color: white;
+      background-color: hsl(6, 63%, 50%);
+      box-shadow: 0px 5px hsl(6, 70%, 34%);
+      &:active{
+          box-shadow: 0px 3px hsl(6, 70%, 34%);
+      }
+  }
+}
+
+.theme-2{
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+  input[type=range]{
+      background-color: hsl(0, 0%, 90%);
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+      background: hsl(0, 5%, 81%);
+  }
+  input[type=range]::-webkit-slider-thumb {
+      background: hsl(25, 98%, 40%);
+  }
+  .display{
+      background-color: hsl(0, 0%, 93%);
+  }
+  .keypad{
+      background-color: hsl(0, 5%, 81%);
+  }
+  .btn{
+      background-color: hsl(45, 7%, 89%);
+      color: hsl(60, 10%, 19%);
+      box-shadow: 0px 5px hsl(35, 11%, 61%);
+      &:active{
+          box-shadow: 0px 3px hsl(35, 11%, 61%);
+      }
+  }
+  .reset-btn, .del-btn{
+      color: white;
+      background-color: hsl(185, 42%, 37%);
+      box-shadow: 0px 5px hsl(185, 58%, 25%);
+      &:active{
+          box-shadow: 0px 3px hsl(185, 58%, 25%);
+      }
+  }
+  .result-btn{
+      color: white;
+      background-color: hsl(25, 98%, 40%);
+      box-shadow: 0px 5px hsl(25, 99%, 27%);
+      &:active{
+          box-shadow: 0px 3px hsl(25, 99%, 27%);
+      }
+  }
+}
+
+.theme-3{
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+  input[type=range]{
+      background-color: hsl(268, 75%, 9%);
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+      background: hsl(268, 71%, 12%);
+  }
+  input[type=range]::-webkit-slider-thumb {
+      background: hsl(176, 100%, 44%);
+  }
+  .display{
+      background-color: hsl(268, 71%, 12%);
+  }
+  .keypad{
+      background-color: hsl(268, 71%, 12%);
+  }
+  .btn{
+      background-color: hsl(268, 47%, 21%);
+      color: hsl(52, 100%, 62%);
+      box-shadow: 0px 5px hsl(290, 70%, 36%);
+      &:active{
+          box-shadow: 0px 3px hsl(290, 70%, 36%);
+      }
+  }
+  .reset-btn, .del-btn{
+      color: white;
+      background-color: hsl(281, 89%, 26%);
+      box-shadow: 0px 5px hsl(285, 91%, 52%);
+      &:active{
+          box-shadow: 0px 3px hsl(285, 91%, 52%);
+      }
+  }
+  .result-btn{
+      color: hsl(198, 20%, 13%);
+      background-color: hsl(176, 100%, 44%);
+      box-shadow: 0px 5px hsl(177, 92%, 70%);
+      &:active{
+          box-shadow: 0px 3px hsl(177, 92%, 70%);
+      }
+  }
+}

@@ -1,0 +1,130 @@
+.theme-1 {
+  background-color: hsl(222deg, 26%, 31%);
+  color: rgba(231, 231, 231, 0.925);
+}
+.theme-1 input[type=range] {
+  background-color: hsl(222deg, 26%, 31%);
+}
+.theme-1 input[type=range]::-webkit-slider-runnable-track {
+  background: hsl(223deg, 31%, 20%);
+}
+.theme-1 input[type=range]::-webkit-slider-thumb {
+  background: hsl(6deg, 63%, 50%);
+}
+.theme-1 .display {
+  background-color: hsl(224deg, 36%, 15%);
+}
+.theme-1 .keypad {
+  background-color: hsl(223deg, 31%, 20%);
+}
+.theme-1 .btn {
+  color: hsl(226deg, 30%, 36%);
+  box-shadow: 0px 5px hsl(33deg, 9%, 77%);
+}
+.theme-1 .btn:active {
+  box-shadow: 0px 3px hsl(30deg, 4%, 59%);
+}
+.theme-1 .del-btn, .theme-1 .reset-btn {
+  color: white;
+  background-color: hsl(225deg, 21%, 49%);
+  box-shadow: 0px 5px hsl(224deg, 28%, 35%);
+}
+.theme-1 .del-btn:active, .theme-1 .reset-btn:active {
+  box-shadow: 0px 3px hsl(224deg, 28%, 35%);
+}
+.theme-1 .result-btn {
+  color: white;
+  background-color: hsl(6deg, 63%, 50%);
+  box-shadow: 0px 5px hsl(6deg, 70%, 34%);
+}
+.theme-1 .result-btn:active {
+  box-shadow: 0px 3px hsl(6deg, 70%, 34%);
+}
+
+.theme-2 {
+  background-color: hsl(0deg, 0%, 90%);
+  color: hsl(60deg, 10%, 19%);
+}
+.theme-2 input[type=range] {
+  background-color: hsl(0deg, 0%, 90%);
+}
+.theme-2 input[type=range]::-webkit-slider-runnable-track {
+  background: hsl(0deg, 5%, 81%);
+}
+.theme-2 input[type=range]::-webkit-slider-thumb {
+  background: hsl(25deg, 98%, 40%);
+}
+.theme-2 .display {
+  background-color: hsl(0deg, 0%, 93%);
+}
+.theme-2 .keypad {
+  background-color: hsl(0deg, 5%, 81%);
+}
+.theme-2 .btn {
+  background-color: hsl(45deg, 7%, 89%);
+  color: hsl(60deg, 10%, 19%);
+  box-shadow: 0px 5px hsl(35deg, 11%, 61%);
+}
+.theme-2 .btn:active {
+  box-shadow: 0px 3px hsl(35deg, 11%, 61%);
+}
+.theme-2 .reset-btn, .theme-2 .del-btn {
+  color: white;
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0px 5px hsl(185deg, 58%, 25%);
+}
+.theme-2 .reset-btn:active, .theme-2 .del-btn:active {
+  box-shadow: 0px 3px hsl(185deg, 58%, 25%);
+}
+.theme-2 .result-btn {
+  color: white;
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: 0px 5px hsl(25deg, 99%, 27%);
+}
+.theme-2 .result-btn:active {
+  box-shadow: 0px 3px hsl(25deg, 99%, 27%);
+}
+
+.theme-3 {
+  background-color: hsl(268deg, 75%, 9%);
+  color: hsl(52deg, 100%, 62%);
+}
+.theme-3 input[type=range] {
+  background-color: hsl(268deg, 75%, 9%);
+}
+.theme-3 input[type=range]::-webkit-slider-runnable-track {
+  background: hsl(268deg, 71%, 12%);
+}
+.theme-3 input[type=range]::-webkit-slider-thumb {
+  background: hsl(176deg, 100%, 44%);
+}
+.theme-3 .display {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme-3 .keypad {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme-3 .btn {
+  background-color: hsl(268deg, 47%, 21%);
+  color: hsl(52deg, 100%, 62%);
+  box-shadow: 0px 5px hsl(290deg, 70%, 36%);
+}
+.theme-3 .btn:active {
+  box-shadow: 0px 3px hsl(290deg, 70%, 36%);
+}
+.theme-3 .reset-btn, .theme-3 .del-btn {
+  color: white;
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0px 5px hsl(285deg, 91%, 52%);
+}
+.theme-3 .reset-btn:active, .theme-3 .del-btn:active {
+  box-shadow: 0px 3px hsl(285deg, 91%, 52%);
+}
+.theme-3 .result-btn {
+  color: hsl(198deg, 20%, 13%);
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: 0px 5px hsl(177deg, 92%, 70%);
+}
+.theme-3 .result-btn:active {
+  box-shadow: 0px 3px hsl(177deg, 92%, 70%);
+}/*# sourceMappingURL=themes.css.map */
