@@ -1,19 +1,21 @@
 const themeSelector = document.querySelector('#themeSelector');
-const themeStyleSheet = document.querySelector('#themeStyleSheet');
 let themeValue = 1;
 
 function lastSelectedTheme(){
     themeValue = localStorage.getItem('selectedTheme');
     if(themeValue === '1'){
-        themeStyleSheet.href = 'styles/themes/theme-1.css';
+        document.body.removeAttribute('class');
+        document.body.setAttribute('class', 'theme-1');
         themeSelector.value = localStorage.getItem('toggleValue');
     }
     else if(themeValue === '2'){
-        themeStyleSheet.href = 'styles/themes/theme-2.css';
+        document.body.removeAttribute('class');
+        document.body.setAttribute('class', 'theme-2');
         themeSelector.value = localStorage.getItem('toggleValue');
     }
     else if(themeValue === '3'){
-        themeStyleSheet.href = 'styles/themes/theme-3.css';
+        document.body.removeAttribute('class');
+        document.body.setAttribute('class', 'theme-3');
         themeSelector.value = localStorage.getItem('toggleValue');
     }
 }
@@ -23,13 +25,16 @@ function selectTheme(){
     themeSelector.addEventListener('input',function(){
         themeValue = themeSelector.value;
         if(themeValue === '1'){
-            themeStyleSheet.href = 'styles/themes/theme-1.css';
+            document.body.removeAttribute('class');
+            document.body.setAttribute('class', 'theme-1');
         }
         else if(themeValue === '2'){
-            themeStyleSheet.href = 'styles/themes/theme-2.css';
+            document.body.removeAttribute('class');
+            document.body.setAttribute('class', 'theme-2');
         }
         else if(themeValue === '3'){
-            themeStyleSheet.href = 'styles/themes/theme-3.css';
+            document.body.removeAttribute('class');
+            document.body.setAttribute('class', 'theme-3');
         }
         if (typeof(Storage) !== 'undefined') {
             localStorage.setItem('selectedTheme', themeValue);
@@ -37,7 +42,7 @@ function selectTheme(){
         }else {
             console.log('Sorry! No Web Storage support');
         }
-    })
+    });
 }
 
 selectTheme();
