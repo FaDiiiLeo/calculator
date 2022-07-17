@@ -81,10 +81,23 @@ body{
 .display{
   width: 100%;
   padding: 38px 30px 32px 30px;
-  direction: rtl;
   border-radius: 8px;
   font-size: 52px;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.previous-inputs{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 28px;
+}
+
+.current-display{
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .keypad{
@@ -109,7 +122,7 @@ body{
 }
 
 .del-btn, .reset-btn{
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .attribution{
