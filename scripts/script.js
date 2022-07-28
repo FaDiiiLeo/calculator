@@ -54,6 +54,16 @@ function selectTheme(){
     });
 }
 
+prevousInputs.addEventListener("wheel", function(e) {
+    e.preventDefault();
+    prevousInputs.scrollLeft += e.deltaY;
+});
+
+calculatorDisplay.addEventListener("wheel", function(e) {
+    e.preventDefault();
+    calculatorDisplay.scrollLeft += e.deltaY;
+});
+
 function add(operand1, operand2){
     return parseFloat(operand1) + parseFloat(operand2);
 }
