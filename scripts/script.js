@@ -54,6 +54,8 @@ function selectTheme(){
     });
 }
 
+selectTheme();
+
 prevousInputs.addEventListener("wheel", function(e) {
     e.preventDefault();
     prevousInputs.scrollLeft += e.deltaY;
@@ -88,30 +90,30 @@ function operate(operator, operand1, operand2){
             return subtract(operand1, operand2);
         case '÷':
             return division(operand1, operand2);
-        case 'x':
+        case '*':
             return multiply(operand1, operand2);
     }
 }
 
-function showInputsOnDisplay(e){
+function showInputsOnDisplay(value){
     if(calculatorDisplay.textContent === '0'){
         calculatorDisplay.textContent = '';
-        calculatorDisplay.textContent += e.target.value;
+        calculatorDisplay.textContent += value;
         flag = false;
     }
     else{
         if(flag){
             calculatorDisplay.textContent = '';
-            calculatorDisplay.textContent += e.target.value;
+            calculatorDisplay.textContent += value;
             flag = false;
         }
         else{
-            calculatorDisplay.textContent += e.target.value;
+            calculatorDisplay.textContent += value;
         }
     }
 }
 
-function performOperation_showResult(e){
+function performOperation_showResult(value){
     if(!isfirstInput){
         operand1 = calculatorDisplay.textContent;
         isfirstInput = true;
@@ -126,7 +128,7 @@ function performOperation_showResult(e){
         operand1 = result;
     }
     flag = true;
-    operator = e.target.value;
+    operator = value;
     prevousInputs.textContent = operand1 + ' ' + operator;
 }
 
@@ -168,30 +170,55 @@ function resetDisplay(){
 
 btnValue.forEach(btn => {
     btn.addEventListener('click', function(e){
-        if(e.target.value != '+' && e.target.value != '-' && e.target.value != '÷' 
-        && e.target.value != 'x' && e.target.value != '.' && e.target.value != 'del'
-        && e.target.value != '=' && e.target.value != 'reset'){
-            showInputsOnDisplay(e);
+        let onClickValue = e.target.value;
+        if(onClickValue != '+' && onClickValue != '-' && onClickValue != '÷' 
+        && onClickValue != '*' && onClickValue != '.' && onClickValue != 'del'
+        && onClickValue != '=' && onClickValue != 'reset'){
+            showInputsOnDisplay(onClickValue);
         }
-        if(e.target.value === '+' || e.target.value === '-'
-        || e.target.value === '÷' || e.target.value === 'x'){
-            performOperation_showResult(e);
+        if(onClickValue === '+' || onClickValue === '-'
+        || onClickValue === '÷' || onClickValue === '*'){
+            performOperation_showResult(onClickValue);
         }
-        if(e.target.value === '=' && isfirstInput){
+        if(onClickValue === '=' && isfirstInput){
             performOperation_showResult_usingEqualBtn();
         }
-        if(e.target.value === '.'){
+        if(onClickValue === '.'){
             if(!calculatorDisplay.textContent.includes('.') && !flag){
                 calculatorDisplay.textContent += '.';
             }
         }
-        if(e.target.value === 'del'){
+        if(onClickValue === 'del'){
             deleteChar();
         }
-        if(e.target.value === 'reset'){
+        if(onClickValue === 'reset'){
             resetDisplay();
         }
     });
 });
 
-selectTheme();
+document.addEventListener('keydown', function(e){
+    let onKeypressValue = e.key;
+    if(Number.isInteger(parseInt(onKeypressValue))){
+        showInputsOnDisplay(onKeypressValue);
+    }
+    else if(onKeypressValue === '.'){
+        if(!calculatorDisplay.textContent.includes('.') && !flag){
+            calculatorDisplay.textContent += '.';
+        }
+    }
+    else if(onKeypressValue === '+' || onKeypressValue === '-' ||
+    onKeypressValue === '/' || onKeypressValue === '*'){
+        if(onKeypressValue === '/') onKeypressValue = '÷';
+        performOperation_showResult(onKeypressValue);
+    }
+    else if(onKeypressValue === 'Backspace'){
+        deleteChar();
+    }
+    else if((onKeypressValue === '=' || onKeypressValue === 'Enter') && isfirstInput){
+        performOperation_showResult_usingEqualBtn();
+    }
+    else if(onKeypressValue === 'Escape'){
+        resetDisplay();
+    }
+});
