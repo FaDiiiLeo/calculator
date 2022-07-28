@@ -58,5 +58,6 @@ Users should be able to:
 
 ## Author
 
-- Website (Github) - [Fahad Akram](https://github.com/FaDiiiLeo)
-- Frontend Mentor - [Fahad Akram](https://www.frontendmentor.io/profile/FaDiiiLeo)
+- Frontend Mentor - [@FaDiiiLeo](https://www.frontendmentor.io/profile/FaDiiiLeo)
+- LinkedIn - [Fahad Akram](https://www.linkedin.com/in/fahad-akram-88bb9222b/)
+- Stack Overflow - [Fahad](https://stackoverflow.com/users/12165302/fahad)
