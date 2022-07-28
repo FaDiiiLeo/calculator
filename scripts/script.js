@@ -1,5 +1,5 @@
 const themeSelector = document.querySelector('#themeSelector');
-const btnValue = document.querySelectorAll('#btnValue');
+const btns = document.querySelectorAll('.btn');
 const prevousInputs = document.querySelector('.previous-inputs');
 const calculatorDisplay = document.querySelector('.current-display');
 let themeValue = 1;
@@ -168,7 +168,7 @@ function resetDisplay(){
     isfirstInput = false;
 }
 
-btnValue.forEach(btn => {
+btns.forEach(btn => {
     btn.addEventListener('click', function(e){
         let onClickValue = e.target.value;
         if(onClickValue != '+' && onClickValue != '-' && onClickValue != '÷' 
