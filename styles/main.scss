@@ -20,6 +20,27 @@
   }
 }
 
+@mixin horizontalScrollBar {
+  overflow-x: auto;
+  &::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-button{
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 12px;
+  }
+  &:hover{
+      &::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0.486);
+      }
+    }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -93,11 +114,15 @@ body{
   display: flex;
   flex-direction: row-reverse;
   font-size: 28px;
+  overflow: auto;
+  @include horizontalScrollBar;
 }
 
 .current-display{
   display: flex;
   flex-direction: row-reverse;
+  overflow-x: auto;
+  @include horizontalScrollBar;
 }
 
 .keypad{

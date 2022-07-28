@@ -280,11 +280,45 @@ body {
   display: flex;
   flex-direction: row-reverse;
   font-size: 28px;
+  overflow: auto;
+  overflow-x: auto;
+}
+.previous-inputs::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+.previous-inputs::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+.previous-inputs::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 12px;
+}
+.previous-inputs:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.486);
 }
 
 .current-display {
   display: flex;
   flex-direction: row-reverse;
+  overflow-x: auto;
+  overflow-x: auto;
+}
+.current-display::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+.current-display::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+.current-display::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 12px;
+}
+.current-display:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.486);
 }
 
 .keypad {
