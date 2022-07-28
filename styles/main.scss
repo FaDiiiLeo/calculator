@@ -114,14 +114,12 @@ body{
   display: flex;
   flex-direction: row-reverse;
   font-size: 28px;
-  overflow: auto;
   @include horizontalScrollBar;
 }
 
 .current-display{
   display: flex;
   flex-direction: row-reverse;
-  overflow-x: auto;
   @include horizontalScrollBar;
 }
 

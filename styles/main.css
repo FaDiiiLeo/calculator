@@ -280,7 +280,6 @@ body {
   display: flex;
   flex-direction: row-reverse;
   font-size: 28px;
-  overflow: auto;
   overflow-x: auto;
 }
 .previous-inputs::-webkit-scrollbar {
@@ -302,7 +301,6 @@ body {
 .current-display {
   display: flex;
   flex-direction: row-reverse;
-  overflow-x: auto;
   overflow-x: auto;
 }
 .current-display::-webkit-scrollbar {
