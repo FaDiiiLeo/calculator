@@ -190,6 +190,15 @@ input[type=range]::-moz-range-thumb {
   margin-top: 5px;
 }
 
+@supports (-moz-appearance: none) {
+  .theme-slider-values {
+    gap: 18px !important;
+  }
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 80% !important;
+  }
+}
 input[type=range]::-ms-track {
   width: 100%;
   height: 22px;
@@ -281,7 +290,8 @@ body {
   justify-content: center;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 18px;
+  gap: 15px;
+  margin-bottom: 2px;
 }
 
 .display {
